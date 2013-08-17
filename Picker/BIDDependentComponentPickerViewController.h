@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kStateComponent 0
+#define kZipComponent 1
 
-@interface BIDDependentComponentPickerViewController : UIViewController
+@interface BIDDependentComponentPickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (nonatomic, strong) IBOutlet UIPickerView *dependentPicker;
+@property (nonatomic, strong) NSDictionary *stateZip;
+@property (nonatomic, strong) NSArray *states;
+@property (nonatomic, strong) NSArray *zips;
+
+-(IBAction)buttonPressed;
 
 @end
