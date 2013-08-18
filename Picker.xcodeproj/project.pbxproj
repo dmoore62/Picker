@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A865BEA17C152D1002DD8DE /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE417C152D1002DD8DE /* apple.png */; };
+		2A865BEB17C152D1002DD8DE /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE517C152D1002DD8DE /* bar.png */; };
+		2A865BEC17C152D1002DD8DE /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE617C152D1002DD8DE /* cherry.png */; };
+		2A865BED17C152D1002DD8DE /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE717C152D1002DD8DE /* crown.png */; };
+		2A865BEE17C152D1002DD8DE /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE817C152D1002DD8DE /* lemon.png */; };
+		2A865BEF17C152D1002DD8DE /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE917C152D1002DD8DE /* seven.png */; };
 		2A8B1A0917BFAABF00E1D26A /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B1A0817BFAABF00E1D26A /* statedictionary.plist */; };
 		2A8B1A0D17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B1A0C17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib */; };
 		2A94238117B678F10088CC8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A94238017B678F10088CC8B /* UIKit.framework */; };
@@ -31,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A865BE417C152D1002DD8DE /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/apple.png"; sourceTree = "<group>"; };
+		2A865BE517C152D1002DD8DE /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/bar.png"; sourceTree = "<group>"; };
+		2A865BE617C152D1002DD8DE /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cherry.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/cherry.png"; sourceTree = "<group>"; };
+		2A865BE717C152D1002DD8DE /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crown.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/crown.png"; sourceTree = "<group>"; };
+		2A865BE817C152D1002DD8DE /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lemon.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/lemon.png"; sourceTree = "<group>"; };
+		2A865BE917C152D1002DD8DE /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seven.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/seven.png"; sourceTree = "<group>"; };
 		2A8B1A0817BFAABF00E1D26A /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		2A8B1A0C17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDependentComponentPickerViewController.xib; sourceTree = "<group>"; };
 		2A94237D17B678F10088CC8B /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +135,12 @@
 				2A94239E17B67D530088CC8B /* BIDDatePickerViewController.m */,
 				2A94239F17B67D530088CC8B /* BIDDatePickerViewController.xib */,
 				2A8B1A0817BFAABF00E1D26A /* statedictionary.plist */,
+				2A865BE417C152D1002DD8DE /* apple.png */,
+				2A865BE517C152D1002DD8DE /* bar.png */,
+				2A865BE617C152D1002DD8DE /* cherry.png */,
+				2A865BE717C152D1002DD8DE /* crown.png */,
+				2A865BE817C152D1002DD8DE /* lemon.png */,
+				2A865BE917C152D1002DD8DE /* seven.png */,
 				2A94238717B678F10088CC8B /* Supporting Files */,
 				2A94238F17B678F10088CC8B /* BIDAppDelegate.h */,
 				2A94239017B678F10088CC8B /* BIDAppDelegate.m */,
@@ -208,6 +226,12 @@
 				2A9423B917B682C90088CC8B /* TabBarController.xib in Resources */,
 				2A8B1A0917BFAABF00E1D26A /* statedictionary.plist in Resources */,
 				2A8B1A0D17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib in Resources */,
+				2A865BEA17C152D1002DD8DE /* apple.png in Resources */,
+				2A865BEB17C152D1002DD8DE /* bar.png in Resources */,
+				2A865BEC17C152D1002DD8DE /* cherry.png in Resources */,
+				2A865BED17C152D1002DD8DE /* crown.png in Resources */,
+				2A865BEE17C152D1002DD8DE /* lemon.png in Resources */,
+				2A865BEF17C152D1002DD8DE /* seven.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
