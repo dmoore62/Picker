@@ -7,12 +7,33 @@
 //
 
 #import "BIDCustomPickerViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface BIDCustomPickerViewController ()
 
 @end
 
-@implementation BIDCustomPickerViewController
+@implementation BIDCustomPickerViewController{
+    SystemSoundID winSoundID;
+    SystemSoundID crunchSoundID;
+}
+
+-(void)showButton
+{
+    self.button.hidden = NO;
+}
+
+-(void)playWinSound
+{
+    if(winSoundID == 0)
+    {
+        NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"win" withExtension:@"wav"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &winSoundID);
+    }
+    AudioServicesPlaySystemSound(winSoundID);
+    self.winLabel.text = @"WINNING!";
+    [self performSelector:@selector(showButton) withObject:nil afterDelay:1.5];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,6 +61,7 @@
 
 -(IBAction)spin
 {
+    [self playWinSound];
     BOOL win = NO;
     int numInRow = 1;
     int lastVal = -1;
@@ -55,15 +77,27 @@
         
         [self.picker selectRow:newValue inComponent:i animated:YES];
         [self.picker reloadComponent:i];
-        if (numInRow == 3) {
+        if (numInRow >= 3) {
             win = YES;
         }
     }
-    if(win){
-        self.winLabel.text = @"WIN!";
-    }else{
-        self.winLabel.text = @"";
+    
+    if(crunchSoundID == 0){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
+        
+        NSURL *soundURL = [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &crunchSoundID);
     }
+    
+    AudioServicesPlaySystemSound(crunchSoundID);
+    
+    if(win){
+        [self performSelector:@selector(playWinSound) withObject:nil afterDelay:.5];
+    }else{
+        [self performSelector:@selector(showButton) withObject:nil afterDelay:.5];
+    }
+    self.button.hidden = YES;
+    self.winLabel.text = @"";
 }
 
 #pragma mark -

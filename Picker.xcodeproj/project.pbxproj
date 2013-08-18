@@ -13,6 +13,9 @@
 		2A865BED17C152D1002DD8DE /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE717C152D1002DD8DE /* crown.png */; };
 		2A865BEE17C152D1002DD8DE /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE817C152D1002DD8DE /* lemon.png */; };
 		2A865BEF17C152D1002DD8DE /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BE917C152D1002DD8DE /* seven.png */; };
+		2A865BF217C1576D002DD8DE /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BF017C1576D002DD8DE /* crunch.wav */; };
+		2A865BF317C1576D002DD8DE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A865BF117C1576D002DD8DE /* win.wav */; };
+		2A865BF517C16585002DD8DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A865BF417C16585002DD8DE /* AudioToolbox.framework */; };
 		2A8B1A0917BFAABF00E1D26A /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B1A0817BFAABF00E1D26A /* statedictionary.plist */; };
 		2A8B1A0D17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B1A0C17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib */; };
 		2A94238117B678F10088CC8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A94238017B678F10088CC8B /* UIKit.framework */; };
@@ -43,6 +46,9 @@
 		2A865BE717C152D1002DD8DE /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crown.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/crown.png"; sourceTree = "<group>"; };
 		2A865BE817C152D1002DD8DE /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lemon.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/lemon.png"; sourceTree = "<group>"; };
 		2A865BE917C152D1002DD8DE /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seven.png; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Images/seven.png"; sourceTree = "<group>"; };
+		2A865BF017C1576D002DD8DE /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crunch.wav; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Sounds/crunch.wav"; sourceTree = "<group>"; };
+		2A865BF117C1576D002DD8DE /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../../Downloads/Old-Blog-Code-master/Exercise Projects/Beginning iPhone Development/07 Pickers/Custom Picker Sounds/win.wav"; sourceTree = "<group>"; };
+		2A865BF417C16585002DD8DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2A8B1A0817BFAABF00E1D26A /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		2A8B1A0C17BFBC5700E1D26A /* BIDDependentComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDependentComponentPickerViewController.xib; sourceTree = "<group>"; };
 		2A94237D17B678F10088CC8B /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A865BF517C16585002DD8DE /* AudioToolbox.framework in Frameworks */,
 				2A94238117B678F10088CC8B /* UIKit.framework in Frameworks */,
 				2A94238317B678F10088CC8B /* Foundation.framework in Frameworks */,
 				2A94238517B678F10088CC8B /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +99,7 @@
 		2A94237417B678F00088CC8B = {
 			isa = PBXGroup;
 			children = (
+				2A865BF417C16585002DD8DE /* AudioToolbox.framework */,
 				2A94238617B678F10088CC8B /* Picker */,
 				2A94237F17B678F10088CC8B /* Frameworks */,
 				2A94237E17B678F10088CC8B /* Products */,
@@ -119,6 +127,8 @@
 		2A94238617B678F10088CC8B /* Picker */ = {
 			isa = PBXGroup;
 			children = (
+				2A865BF017C1576D002DD8DE /* crunch.wav */,
+				2A865BF117C1576D002DD8DE /* win.wav */,
 				2A9423A217B67DE70088CC8B /* BIDSingleComponentPickerViewController.h */,
 				2A9423A317B67DE70088CC8B /* BIDSingleComponentPickerViewController.m */,
 				2A9423A417B67DE70088CC8B /* BIDSingleComponentPickerViewController.xib */,
@@ -232,6 +242,8 @@
 				2A865BED17C152D1002DD8DE /* crown.png in Resources */,
 				2A865BEE17C152D1002DD8DE /* lemon.png in Resources */,
 				2A865BEF17C152D1002DD8DE /* seven.png in Resources */,
+				2A865BF217C1576D002DD8DE /* crunch.wav in Resources */,
+				2A865BF317C1576D002DD8DE /* win.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

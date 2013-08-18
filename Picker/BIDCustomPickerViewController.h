@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UIPickerView *picker;
 @property (nonatomic, strong) IBOutlet UILabel *winLabel;
 @property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) IBOutlet UIButton *button;
 
 -(IBAction)spin;
 
